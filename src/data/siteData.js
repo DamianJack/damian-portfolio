@@ -295,8 +295,8 @@ export const contact = {
   primaryChannels: [
     {
       label: 'Phone',
-      value: '+49 15206755918',
-      href: 'tel:+4915206755918',
+      value: '+49 15510 660189',
+      href: 'tel:+4915510660189',
       icon: FaPhone,
     },
     {
