@@ -130,6 +130,12 @@ export const projectItems = [
       'Integrated SAML/SSO authentication for secure single sign-on capabilities across the enterprise.',
     tags: ['SAML', 'SSO', 'Authentication', 'Integration', 'Java', 'Single-Sign-On'],
   },
+  {
+    title: 'Trace a fake story back to its first mention on the open web.',
+    description:
+      'Given a piece of suspected disinformation, find the earliest sources.',
+    tags: ['LLMs', 'RAG', 'Prompt Engineering', 'GenAI', 'Plugin', 'Semantic Similarity'],
+  }
   
 ];
 
