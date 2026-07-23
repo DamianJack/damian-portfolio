@@ -12,6 +12,8 @@ import {
   SiOpencv,
   SiPython,
   SiTensorflow,
+  SiLangchain,
+  SiPytorch,
 } from 'react-icons/si';
 import { FaAws, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
@@ -26,7 +28,7 @@ export const navItems = [
 ];
 
 export const hero = {
-  pretitle: 'AI & ML Engineer',
+  pretitle: 'Software + AI Engineer',
   title: 'Hi, I’m Damian. I build intelligent, data-driven software systems.',
   description:
     '',
@@ -42,7 +44,7 @@ export const hero = {
 export const about = {
   heading: 'About Me',
   description:
-    'Artificial Intelligence Master’s student with practical experience in machine learning, deep learning, and data-driven modeling, backed by 3 years of software development and automation experience. I am Damian, currently based in Würzburg, Germany, and pursuing my Master’s in Artificial Intelligence at THWS. I am passionate about building intelligent systems that are practical, reliable, and human-centered. I enjoy turning research ideas into deployable software and continuously improving my craft through real-world problem solving.',
+    'Artificial Intelligence Master’s student with practical experience in machine learning, deep learning, and data-driven modeling, backed by 3 years of software development and automation experience. I am Damian, currently based in Würzburg, Germany. I am passionate about building intelligent systems that are practical, reliable, and human-centered. I enjoy turning research ideas into deployable software and continuously improving my craft through real-world problem solving.',
   strengths: [
     { label: 'Who I am', text: 'AI-focused software engineer with a product mindset.' },
     { label: 'What I value', text: 'Clean implementation, collaboration, and meaningful outcomes.' },
@@ -54,6 +56,16 @@ export const about = {
 };
 
 export const experienceItems = [
+  {
+    type: 'professional',
+    role: 'Research Assistant',
+    org: 'CAIRO - Technische Hochschule Wurzburg-Schweinfurt, Germany',
+    period: 'June 2026 - Present',
+    points: [
+      'Developing digital brain using information theory and knowledge graphs.',
+      'Designed and developed a interactive web-based visualization tool for digital brain connectivity and information flow.',
+    ],
+  },
   {
     type: 'education',
     role: 'Master’s in Artificial Intelligence',
@@ -89,7 +101,7 @@ export const experienceItems = [
   },
   {
     type: 'education',
-    role: 'B.E. Computer Science and Engineering',
+    role: 'B.Tech. Computer Science and Engineering',
     org: 'Amrita University, Coimbatore, India',
     period: 'July 2019 - May 2023',
     points: [
@@ -135,8 +147,37 @@ export const projectItems = [
     description:
       'Given a piece of suspected disinformation, find the earliest sources.',
     tags: ['LLMs', 'RAG', 'Prompt Engineering', 'GenAI', 'Plugin', 'Semantic Similarity'],
+  },
+  {
+    title: 'Crane positioning in construction sites using ML',
+    description:
+      'Developed a predictive system to automatically position cranes in construction sites using machine learning techniques.',
+    tags: ['Heatmap', 'Machine Learning', 'Automation', 'Python'],
+  },
+  {
+    title: 'N-Ball tracking using particle filtering and Kalman filtering',
+    description:
+      'Developed a system to track balls in motion using particle filtering and Kalman filtering techniques.',
+    tags: ['Reinforcement Learning', 'Control Systems', 'Python'],
+  },
+  {
+    title: 'Post incident pipeline management and test automation',
+    description:
+      'Developed a system to manage post-incident workflows and automate testing processes.',
+    tags: ['Automation', 'Testing', 'Python', 'CI/CD', 'GIT', 'medical-data', 'workflow', 'inference'],
+  },
+  {
+    title: 'BlackJack Game simulation using Monte Carlo and Q-learning',
+    description:
+      'Developed a simulation to model and analyze strategies for the BlackJack game using Monte Carlo methods and Q-learning.',
+    tags: ['Reinforcement Learning', 'Game Theory', 'Python', 'Monte Carlo', 'Q-learning', 'Double Q-learning'],
+  },
+  {
+    title: 'Interactive web-app for digital brain connectivity and information flow',
+    description:
+      'Developed an interactive web application to visualize and analyze digital brain connectivity and information flow.',
+    tags: ['Web Development', 'JavaScript', 'React', 'Python', 'Docker', 'Java'],
   }
-  
 ];
 
 export const skills = [
@@ -277,6 +318,16 @@ export const skillNodes = [
     description: 'Shell-based development environment and operational tooling.',
     details: 'Daily usage for automation, scripting, and deployment tasks.',
   },
+  {
+    id: 'RAG',
+    label: 'RAG',
+    x: '92%',
+    y: '42%',
+    icon: SiPytorch,
+    level: 68,
+    description: 'Retrieval-Augmented Generation for knowledge-driven AI solutions.',
+    details: 'Used in conjunction with LLMs for information retrieval and context-aware generation.',
+  },
 ];
 
 export const skillEdges = [
@@ -292,6 +343,7 @@ export const skillEdges = [
   { from: 'docker', to: 'k8s' },
   { from: 'docker', to: 'cicd' },
   { from: 'cicd', to: 'aws' },
+  { from: 'llm', to: 'RAG' },
 ];
 
 export const contact = {
