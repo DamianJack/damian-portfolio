@@ -21,35 +21,27 @@ import { MdEmail } from 'react-icons/md';
 export const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'education', label: 'Education' },
+  { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' },
 ];
 
 export const hero = {
-  pretitle: 'Software + AI Engineer',
-  title: 'Hi, I’m Damian. I build intelligent, data-driven software systems.',
+  pretitle: 'Software x AI Engineer',
+  title: 'Build intelligent, data-driven software systems.',
   description:
     '',
   primaryLabel: 'See Projects',
   secondaryLabel: 'Let’s Chat',
-  featured: {
-    title: 'Current Focus',
-    description:
-      'Bridging AI research and real-world applications with scalable engineering and cloud optimization.',
-  },
 };
 
 export const about = {
   heading: 'About Me',
   description:
-    'Artificial Intelligence Master’s student with practical experience in machine learning, deep learning, and data-driven modeling, backed by 3 years of software development and automation experience. I am Damian, currently based in Würzburg, Germany. I am passionate about building intelligent systems that are practical, reliable, and human-centered. I enjoy turning research ideas into deployable software and continuously improving my craft through real-world problem solving.',
+    'Artificial Intelligence Master’s student with practical experience in machine learning, deep learning, and data-driven modeling, backed by 3+ years of software development and automation experience. I am Damian, currently based in Würzburg, Germany. I am passionate about building intelligent systems that are practical, reliable, and human-centered. I enjoy turning research ideas into deployable software and continuously improving my craft through real-world problem solving.',
   strengths: [
-    { label: 'Who I am', text: 'AI-focused software engineer with a product mindset.' },
-    { label: 'What I value', text: 'Clean implementation, collaboration, and meaningful outcomes.' },
-    { label: 'Where I am', text: 'Würzburg, Germany.' },
-    { label: 'What I seek', text: 'AI/ML roles where research meets real-world impact.' },
   ],
   quickFacts:
     'Languages: English (C1) · German (A2) · Tamil (Native)',
@@ -57,7 +49,6 @@ export const about = {
 
 export const experienceItems = [
   {
-    type: 'professional',
     role: 'Research Assistant',
     org: 'CAIRO - Technische Hochschule Wurzburg-Schweinfurt, Germany',
     period: 'June 2026 - Present',
@@ -67,17 +58,6 @@ export const experienceItems = [
     ],
   },
   {
-    type: 'education',
-    role: 'Master’s in Artificial Intelligence',
-    org: 'Technische Hochschule Wurzburg-Schweinfurt, Germany',
-    period: 'March 2026 - Present',
-    points: [
-      'Focused on machine learning, deep learning, and data-driven system design.',
-      'Applying academic research in practical AI engineering workflows.',
-    ],
-  },
-  {
-    type: 'professional',
     role: 'Software Development Engineer',
     org: 'Broadridge Financial Solutions, Bangalore, India',
     period: 'July 2023 - March 2026',
@@ -89,7 +69,6 @@ export const experienceItems = [
     ],
   },
   {
-    type: 'professional',
     role: 'Software Development Engineer Intern',
     org: 'Broadridge Financial Solutions, Bangalore, India',
     period: 'January 2023 - June 2023',
@@ -99,8 +78,19 @@ export const experienceItems = [
       'Contributed to reliability improvements in enterprise workflow systems.',
     ],
   },
+];
+
+export const educationItems = [
   {
-    type: 'education',
+    role: 'Master’s in Artificial Intelligence',
+    org: 'Technische Hochschule Wurzburg-Schweinfurt, Germany',
+    period: 'March 2026 - Present',
+    points: [
+      'Focused on machine learning, deep learning, and data-driven system design.',
+      'Applying academic research in practical AI engineering workflows.',
+    ],
+  },
+  {
     role: 'B.Tech. Computer Science and Engineering',
     org: 'Amrita University, Coimbatore, India',
     period: 'July 2019 - May 2023',
@@ -382,6 +372,6 @@ export const contact = {
   ],
 };
 
-export const footerText = '© 2026 Damian Nithish. All rights reserved.';
+export const footerText = '© 2026 Damian J. Building Innovation';
 
 

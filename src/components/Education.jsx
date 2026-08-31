@@ -1,19 +1,19 @@
-import { FaBriefcase } from 'react-icons/fa6';
-import { experienceItems } from '../data/siteData';
+import { FaGraduationCap } from 'react-icons/fa6';
+import { educationItems } from '../data/siteData';
 
-const Experience = () => (
-  <section id="experience" className="section experience-section">
+const Education = () => (
+  <section id="education" className="section">
     <div className="container">
-      <h2>Experience</h2>
+      <h2>Education</h2>
       <div className="timeline">
-        {experienceItems.map((item, idx) => (
+        {educationItems.map((item, idx) => (
           <article
             key={`${item.role}-${item.period}`}
             className={`timeline-card ${idx % 2 === 0 ? 'timeline-right' : 'timeline-left'}`}
           >
             <header className="timeline-card-header">
               <span className="timeline-card-icon">
-                <FaBriefcase />
+                <FaGraduationCap />
               </span>
               <h3>{item.role}</h3>
             </header>
@@ -31,4 +31,4 @@ const Experience = () => (
   </section>
 );
 
-export default Experience;
+export default Education;

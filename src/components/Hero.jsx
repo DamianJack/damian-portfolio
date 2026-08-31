@@ -1,5 +1,5 @@
 import { hero } from '../data/siteData';
-import profilePortrait from '../data/damian-profile.png';
+import profilePortrait from '../data/damian-profile.jpeg';
 
 const Hero = () => (
   <section id="home" className="section hero">
@@ -19,17 +19,10 @@ const Hero = () => (
       </div>
 
       <div className="hero-visual">
-        <div className="hero-visual-grid">
-          <div
-            className="hero-visual-art"
-            aria-hidden="true"
-            style={{ backgroundImage: `url(${profilePortrait})` }}
-          />
-          <div className="card">
-            <h3>{hero.featured.title}</h3>
-            <p>{hero.featured.description}</p>
-          </div>
-        </div>
+        <figure className="hero-portrait">
+          <img src={profilePortrait} alt="Damian" className="hero-portrait-img" />
+          <figcaption className="hero-portrait-name">Damian</figcaption>
+        </figure>
       </div>
     </div>
   </section>
